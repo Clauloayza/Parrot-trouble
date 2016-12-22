@@ -1,0 +1,45 @@
+header{
+    padding: 30px;
+}
+section{
+    background-image: url(fondo.jpg);
+    background-size: contain;
+    background-position: bottom;
+    padding: 40px 0 60px 0;
+}
+hr{
+    border-color: #000;
+}
+section p{
+    font-size: 20px;
+    font-family: serif;
+    
+}
+.text-center{
+    background: rgba(0, 0, 0, 0.47);
+}
+
+}
+section h1{
+    color: #000000;
+    font-family: monospace;
+}
+.text-info{
+    color:#000;
+}
+label{
+    color: rgb(0, 0, 0); 
+    font-family: monospace;
+    
+}
+#salida{
+    color: #fff;
+}
+footer {
+    padding: 16px;
+    background: rgb(0, 0, 0);
+    
+}
+footer a{
+    color: #fff;
+}
