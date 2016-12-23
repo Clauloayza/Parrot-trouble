@@ -1,9 +1,9 @@
 var hora = document.getElementById("hora");
-var talking = document.getElementById("talking");
 var pSalida = document.getElementById("salida");
 
 
 function evaluar() {
+    var talking = document.getElementById("talking").value;
     var parrot = false;
     var phora = hora.value;
     
@@ -14,13 +14,12 @@ function evaluar() {
     
   if(parrot){
       if(phora>=7 && phora<=20){
-          pSalida.innerHTML = "No";
+          pSalida.innerHTML = "no";
       }
       else{
-          pSalida.innerHTML = "Si"
+          pSalida.innerHTML = "si";
       }
-  }
-else{
+  }else{
       pSalida.innerHTML = "No";
   }
 }
