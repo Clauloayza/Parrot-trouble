@@ -1,21 +1,26 @@
+var hora = document.getElementById("hora");
 var talking = document.getElementById("talking");
 var pSalida = document.getElementById("salida");
 
-function calcular() {
-    var parrot = talking.value;
 
-
-    if (parrot == "true" ) {
+function evaluar() {
+    var parrot = false;
+    var phora = hora.value;
+    
+    if(talking =="1"){
+        parrot = true;
         
-       
-    } else {
-        
-     if (20<parrot<6) {
-            pSalida.innerHTML = "Si";
-        } 
-        
-        else {
-            pSalida.innerHTML = "No";
-        }
     }
+    
+  if(parrot){
+      if(phora>=7 && phora<=20){
+          pSalida.innerHTML = "No";
+      }
+      else{
+          pSalida.innerHTML = "Si"
+      }
+  }
+else{
+      pSalida.innerHTML = "No";
+  }
 }

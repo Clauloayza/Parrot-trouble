@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="main.css">
 	<title>Parrot Trouble</title>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
 <header>
@@ -16,39 +18,45 @@
        </center>
     </div>
 </header>
-<section>
-	<div class="container">
+<section class="container">
+	<div class="col-md-8 col-md-offset-2 text-center">
+		<h1 class="">PARROT TROUBLE</h1>
+		<hr>
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<h1>PARROT TROUBLE</h1>
-				<hr>
+
+
+			<div class="col-md-6">
+
+				<h3>HORA</h3>
+				<label for="hora"> Promedio de hora del 0-23
+					<input type="text" class="form-control" id="hora" placeholder="valores de 0-23">
+				</label>
+				<div id="img"></div>
+
+			</div>
+
+
+			<div class="col-md-6">
+				<h3>TALKING</h3>
+				<div class="form-group">
+					<label for="talking">El loro esta hablando?</label>
+					<select class="form-control" id="talking">
+						<option value="1">Si</option>
+						<option value="2">No</option>
+					</select>
+				</div>
+				<div id="img"></div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-5 col-md-offset-2">
-				<div class="form-group">
-					<p>Encuentra un valor del 0 al 23 para "PARROT"</p>
-					<input type="text" class="form-control" id="resta" placeholder="valores brindados para parrot">
-				</div>
-				
-				<center>
-				    <button onclick="calcular()" class="btn btn-primary">Calcular</button>    
-				</center>
-				
-			</div>
-			<div class="col-md-3 text-center">
-				<h4 class="text-info">RESULTADO</h4>
-				<div id="salida" style="font-size:50px;" class="text-center">-</div>    
-				<p>Tenemos Problemas</p>
-				
-	        </div>
-	   </div>
-    </div>
+		<div class="well">
+			<h4>Averigua si estamos en problemas</h4>
+			<h1 id="salida"></h1>
+		</div>
+		<button onclick="evaluar()" class="btn-warning btn-lg btn">Evaluar</button>
+	</div>
 </section>
-<footer>
-    <center>
-        <a>clou7loymed@gmail.com</a>
-    </center>
+<footer class="container">
+    <center><a href="">clou7loymed@gmail.com</a></center>
 </footer>
 </body>
 <script src="main.js"></script>
