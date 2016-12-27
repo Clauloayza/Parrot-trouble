@@ -14,24 +14,23 @@
 <header>
     <div>
        <center>
-           <img src="" class="img-responsive" alt="">
+           <img src="logo.png" width="30%" class="img-responsive" alt="">
        </center>
     </div>
 </header>
 <section class="container">
+ <div class="row">
 	<div class="col-md-8 col-md-offset-2 text-center">
 		<h1 class="">PARROT TROUBLE</h1>
 		<hr>
 		<div class="row">
-
-
 			<div class="col-md-6">
 
 				<h3>HORA</h3>
 				<label for="hora"> Promedio de hora del 0-23
 					<input type="text" class="form-control" id="hora" placeholder="valores de 0-23">
 				</label>
-				<div id="img"></div>
+				
 
 			</div>
 
@@ -45,8 +44,13 @@
 						<option value="2">No</option>
 					</select>
 				</div>
-				<div id="img"></div>
+				
 			</div>
+
+    <div class="text-center">
+        <div id="img"></div>
+    </div>
+
 		</div>
 		<div class="well">
 			<h4>Averigua si estamos en problemas</h4>
@@ -54,8 +58,9 @@
 		</div>
 		<button onclick="evaluar()" class="btn-warning btn-lg btn">Evaluar</button>
 	</div>
+</div>
 </section>
-<footer class="container">
+<footer>
     <center><a href="">clou7loymed@gmail.com</a></center>
 </footer>
 </body>
